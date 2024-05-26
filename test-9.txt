@@ -1,0 +1,18 @@
+# Test 9
+CREATE students 3 string int double name age gpa
+INSERT INTO students 10 ROWS
+Alice 20 3.5
+Bob 21 3.7
+Charlie 22 3.9
+David 23 4.0
+Eva 24 3.8
+Frank 25 3.2
+Grace 26 3.6
+Hannah 27 3.4
+Isaac 28 3.1
+Jack 29 3.3
+GENERATE FOR students hash INDEX ON gpa
+PRINT FROM students 2 name age WHERE gpa > 3.5
+DELETE FROM students WHERE age < 25
+PRINT FROM students 2 name age WHERE gpa = 3.5
+QUIT

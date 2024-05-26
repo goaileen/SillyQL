@@ -1,0 +1,28 @@
+# test-1.txt
+# bleh
+# xd
+CREATE 281class 10 string string bool double int bool bool int double string emotion person Y/N height age is_present has_book grade gpa notes
+INSERT INTO 281class 3 ROWS
+happy Darden true 175 20 true false 3 3.5 Notes_about_Darden
+stressed students false 165 21 true true 3 3.7 Notes_about_students
+busy office_hours true 180 22 true false 3 4.0 Notes_about_office_hours
+DELETE FROM 281class WHERE person = Darden
+PRINT FROM 281class 4 person emotion Y/N age WHERE gpa > 3.0
+PRINT FROM 281class 3 emotion person Y/N ALL
+DELETE FROM 281class WHERE grade = 3
+INSERT INTO 281class 5 ROWS
+happy Sith true 170 19 true true 3 3.9 Notes_about_Sith
+relaxed teacher true 185 35 true true 7 4.2 Notes_about_teacher
+tired janitor false 160 40 false false 5 2.8 Notes_about_janitor
+determined student true 175 21 true true 4 3.6 Notes_about_student
+excited parent true 160 45 true true 7 4.5 Notes_about_parent
+CREATE zoo 3 string int double animal popularity money
+INSERT INTO zoo 5 ROWS
+lion 5 250.5
+elephant 3 450.2
+giraffe 2 200.75
+tiger 4 300.0
+penguin 10 15.5
+JOIN 281class AND 281class WHERE person = person AND PRINT 3 person 1 age 2 animal 1
+REMOVE 281class
+QUIT

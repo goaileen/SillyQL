@@ -1,0 +1,39 @@
+# Test 7
+CREATE products 3 string double int name price quantity
+INSERT INTO products 30 ROWS
+Laptop 1000.0 5
+Phone 800.0 8
+Tablet 500.0 10
+Desktop 1200.0 3
+Monitor 300.0 15
+Keyboard 50.0 20
+Mouse 20.0 30
+Printer 200.0 7
+Scanner 150.0 9
+Headphones 100.0 12
+Chair 80.0 25
+Desk 150.0 6
+Lamp 30.0 18
+Clock 10.0 22
+Shelf 70.0 13
+Rug 40.0 27
+Bookshelf 90.0 11
+Cabinet 110.0 17
+Couch 300.0 4
+Table 200.0 9
+Chair2 80.0 15
+Desk2 150.0 8
+Lamp2 30.0 20
+Clock2 10.0 17
+Shelf2 70.0 11
+Rug2 40.0 23
+Bookshelf2 90.0 9
+Cabinet2 110.0 14
+Couch2 300.0 5
+Table2 200.0 10
+PRINT FROM products 2 name price ALL
+DELETE FROM products WHERE price > 600.0
+PRINT FROM products 3 name price quantity ALL
+GENERATE FOR products hash INDEX ON quantity
+PRINT FROM products 2 name price ALL
+QUIT

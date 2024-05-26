@@ -1,0 +1,38 @@
+# Test 6
+CREATE students 3 string int double name age gpa
+INSERT INTO students 30 ROWS
+Alice 20 3.5
+Bob 21 3.7
+Charlie 22 3.9
+David 23 4.0
+Eva 24 3.8
+Frank 25 3.2
+Grace 26 3.6
+Hannah 27 3.4
+Isaac 28 3.1
+Jack 29 3.3
+Kevin 30 3.6
+Lily 31 3.8
+Mike 32 3.2
+Nancy 33 3.9
+Olivia 34 3.5
+Peter 35 3.7
+Quinn 36 3.6
+Rachel 37 3.9
+Sam 38 3.4
+Tom 39 3.8
+Ursula 40 3.5
+Victor 41 3.7
+Wendy 42 3.6
+Xavier 43 3.9
+Yolanda 44 3.8
+Zack 45 3.7
+Anna 46 3.6
+Ben 47 3.9
+Cathy 48 3.5
+Daniel 49 3.7
+GENERATE FOR students bst INDEX ON age
+PRINT FROM students 2 name age WHERE gpa > 3.5
+DELETE FROM students WHERE age < 25
+PRINT FROM students 2 name age WHERE gpa = 3.5
+QUIT

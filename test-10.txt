@@ -1,0 +1,13 @@
+# Test 10
+CREATE employees 4 string bool int double name is_manager age salary
+INSERT INTO employees 3 ROWS
+John true 35 50000.0
+Alice false 28 40000.0
+Bob true 40 60000.0
+PRINT FROM employees 2 name salary ALL
+DELETE FROM employees WHERE name = Alice
+GENERATE FOR employees hash INDEX ON age
+PRINT FROM employees 2 name age WHERE is_manager = true
+JOIN employees AND employees WHERE name = name AND PRINT 2 name 1 age 2 salary 1
+REMOVE employees
+QUIT

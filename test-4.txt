@@ -1,0 +1,12 @@
+# Test 4
+CREATE products 3 string double int name price quantity
+INSERT INTO products 3 ROWS
+Laptop 1000.0 5
+Phone 800.0 8
+Tablet 500.0 10
+PRINT FROM products 2 name price ALL
+DELETE FROM products WHERE price > 600.0
+PRINT FROM products 3 name price quantity ALL
+GENERATE FOR products bst INDEX ON quantity
+PRINT FROM products 2 name price ALL
+QUIT
